@@ -1,5 +1,8 @@
 $(document).ready(function () {
     
+
+    //gnb 메뉴 슬라이드 다운구현
+
     $(".gnb > li").mouseenter(function(){
 
 //      해당 li의 ul만 슬라이드다운 할때        
@@ -13,13 +16,26 @@ $(document).ready(function () {
     
     $(".gnb > li ").mouseleave(function(){
         
-//       $("this").children("ul").slideUp(300); 
+        var li_list = $("this").index();
         
-        
+//       $("this").children("ul").slideUp(300);
         $(".gnb > li ul, .gnbBG").stop().hide();
+
+        $(".gnb >li").removeClass("li_on");
     });
 
 
+    //gnb li 클래스 on 주기
+
+    $(".gnb >li").mouseenter(function(){
+
+        var li_list = $("this").index();
+
+        $(".gnb >li").removeClass("li_on");
+        $(this).addClass("li_on");
+
+
+    });
     
     
     
