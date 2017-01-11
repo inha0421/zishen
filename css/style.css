@@ -85,8 +85,11 @@ img{border: none;}
     line-height: 50px;
     font-weight: 400;
     text-align: left;
-    padding-right: 104px;
+    padding-right: 125px;
 }
+
+.headerWrap header .gnb > li:last-child > a h1{padding-right: 0px;}
+
 
 .headerWrap header .gnb > li > a:hover{color: #b4252d;}
 
