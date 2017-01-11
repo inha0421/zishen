@@ -61,6 +61,8 @@ img{border: none;}
 }
 .headerWrap .headerTop .personalID:hover{color: #b4252d; }
 
+
+
 /********** gnb작업 시작 **********/
 
 .headerWrap header .gnb{
@@ -71,54 +73,47 @@ img{border: none;}
 
 .headerWrap header .gnb > li{
     float: left;
-    position: relative;/* .headerWrap header .gnb > li ul 의 position 기준*/
-    width: 160px;
-    height: 50px;
-    margin-bottom: 0px;
-    text-align:left;
-    box-sizing: border-box;
+    position: relative;/* .gnb > li ul 의 position 기준*/
+    display: inline-block;
 }
-/*.headerWrap header .gnb > li:nth-child(2){width : 200px;}*/
-.headerWrap header .gnb > li > a{
-    color: #333;
-} 
+
+.headerWrap header .gnb > li > a{ color: #333; }
  
 .headerWrap header .gnb > li > a h1{
+    box-sizing: border-box;
     font-size: 14px;
     line-height: 50px;
-    font-weight: normal;
+    font-weight: 400;
+    text-align: left;
+    padding-right: 104px;
 }
-.headerWrap header .gnb > li:first-child{    margin-left: 0px;}
-.headerWrap header .gnb > li:last-child{    margin-right: 0px;}
+
 .headerWrap header .gnb > li > a:hover{color: #b4252d;}
 
 .headerWrap header .gnb > li ul{
     position: absolute;
     display: none;
     z-index: 5;
-    padding-top: 10px;
+    padding-top: 20px;
     box-sizing: border-box;
     height: 135px;
-}    
+    width: 100%;
+}
 
 .headerWrap header .gnb > li ul li a{
     display: block;
-    width: 160px;
     height: 20px;
     color: #999;
     text-align: left;
     font-size: 13px;
     line-height: 20px;
-    margin-top: 10px;
+    margin-bottom: 10px;
 } 
-
-.headerWrap header .gnb > li:last-child ul li a{    
-    margin-right: 0px;
-}
 
 
 .headerWrap header .gnb > li ul li a:hover{
-    color: #000; text-decoration: underline;
+    color: #000;
+    text-decoration: underline;
 }
 
 .gnbBG{
