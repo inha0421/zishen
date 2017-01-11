@@ -1,0 +1,315 @@
+*{margin: 0; padding: 0; line-height: 1;}
+ul{list-style: none;}
+a{text-decoration: none;}
+img{border: none;}
+
+
+/*********** 상단 작업 완료 ************/
+
+
+.headerWrap{
+    position: relative;
+    border-bottom: 1px solid #999;
+    height: 155px;
+    box-sizing: border-box;
+}
+
+.headerWrap .headerTop{
+    width: 1020px;
+    height: 90px;
+    margin: 0 auto;
+}
+.headerWrap header{
+    width: 1020px;
+    height: 155px;
+    margin: 0 auto;
+    position:relative;/*margin 0 auto 한 그 위치에 그대로 있어라 + .gnb의 기준이 된다*/
+}
+
+.headerWrap .headerTop .topIcon{
+    position: absolute;
+    top:50px;
+    left: 0px;
+}
+
+.headerWrap .headerTop .topIcon li{
+    float: left;
+    margin-right: 7px;
+}
+.headerWrap .headerTop .topIcon li:last-child{margin-left: 12px;}
+
+.headerWrap .headerTop .logo{
+    display: block;
+    width: 133px;
+    height: 100px;
+    margin: 0 auto;
+    position: absolute;
+    top:10px;
+    left: 50%;
+    margin-left: -66px;
+    background-image: url(../img/header/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.headerWrap .headerTop .personalID{
+    position: absolute;
+    right: 5px;
+    top: 50px;
+    color: #666;
+    font-size: 11px;
+}
+.headerWrap .headerTop .personalID:hover{color: #b4252d; }
+
+/********** gnb작업 시작 **********/
+
+.headerWrap header .gnb{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.headerWrap header .gnb > li{
+    float: left;
+    position: relative;/* .headerWrap header .gnb > li ul 의 position 기준*/
+    width: 160px;
+    height: 50px;
+    margin-bottom: 0px;
+    text-align:left;
+    box-sizing: border-box;
+}
+/*.headerWrap header .gnb > li:nth-child(2){width : 200px;}*/
+.headerWrap header .gnb > li > a{
+    color: #333;
+} 
+ 
+.headerWrap header .gnb > li > a h1{
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: normal;
+}
+.headerWrap header .gnb > li:first-child{    margin-left: 0px;}
+.headerWrap header .gnb > li:last-child{    margin-right: 0px;}
+.headerWrap header .gnb > li > a:hover{color: #b4252d;}
+
+.headerWrap header .gnb > li ul{
+    position: absolute;
+    display: none;
+    z-index: 5;
+    padding-top: 10px;
+    box-sizing: border-box;
+    height: 135px;
+}    
+
+.headerWrap header .gnb > li ul li a{
+    display: block;
+    width: 160px;
+    height: 20px;
+    color: #999;
+    text-align: left;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 10px;
+} 
+
+.headerWrap header .gnb > li:last-child ul li a{    
+    margin-right: 0px;
+}
+
+
+.headerWrap header .gnb > li ul li a:hover{
+    color: #000; text-decoration: underline;
+}
+
+.gnbBG{
+    width:100%;
+    height: 135px;
+    background-color: #fff;
+    position: absolute;
+    top:155px;
+    display: none;
+    z-index: 5;
+}
+
+/********** visual Slider **********/
+
+.visual{
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.visual .panel{
+    width: 300%;
+    height: 100%;
+    margin-left: -100%;
+}
+
+.visual .panel li{
+    float: left;
+    width: 33.333%;
+    height: 100%;
+}
+
+.visual .panel li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.visual .panel .slide01 a{background-image: url(../img/slider/slide02.jpg);}
+.visual .panel .slide02 a{background-image: url(../img/slider/slide01.jpg);}
+.visual .panel .slide03 a{background-image: url(../img/slider/slide03.jpg);}
+
+
+.visual .prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    margin-top: -43px;
+}
+
+.visual .next{
+    position: absolute;
+    top: 50%;
+    margin-top: -43px;
+    right: 30px;
+}
+
+/********** center **********/
+
+center{
+    width: 1020px;
+    height: 1735px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+center .centerUL{
+    
+}
+center .centerUL li{
+    float: left;
+    margin-bottom: 30px;
+/*    border:1px solid #999;*/
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+center .centerLeft{
+    font-size: 0;
+    float: left;
+}
+center .centerLeft li{margin-bottom: 30px;}
+center .centerLeft li:last-child{margin-bottom: 0px;}
+center .centerRight li{margin-bottom: 30px;}
+center .centerRight li:last-child{margin-bottom: 0px;}
+center .centerRight{
+    font-size: 0;
+    float: right;
+}
+
+/*********** bottom ***********/
+
+.bottom {
+    width: 1020px;
+    height: 665px;
+    margin: 0 auto;
+}
+
+.bottom ul li{
+    float: left;
+    width: 490px;
+    height: 420px;
+    text-align: center;
+    position: relative;
+}
+.bottom ul li .blog {
+    position: absolute;
+    top:10px;
+    left: 10px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-image: url(../img/cont2/b_ot.png);
+}
+.bottom ul li .facebook {
+    position: absolute;
+    top:10px;
+    left: 10px;
+    display: block; 
+    width: 45px;
+    height: 45px;
+    background-image: url(../img/cont2/f_ot.png);    
+}
+
+
+.bottom ul li:hover h1 a{
+    text-decoration: underline;
+}
+
+.bottom ul li:hover .blog{
+    background-image: url(../img/cont2/b_ov.png);
+}
+.bottom ul li:hover .facebook{
+    background-image: url(../img/cont2/f_ov.png);
+}
+
+
+.bottom ul li:nth-child(1){margin-right: 30px;}
+
+.bottom ul li h1{padding-top: 20px;}
+.bottom ul li h1 a {
+    font-weight: normal;
+    font-size: 20px;
+    color: #000;
+}
+
+.bottom ul li h3 {
+    color: #666;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+/********** footer **********/
+
+.footerWrap{
+    width: 100%;
+    height: 215px;
+    background-color: #333;
+    text-align: center;
+    color: #999;
+}
+
+footer{
+    padding-top: 70px;
+    box-sizing: border-box;
+    width: 1020px;
+    height: 215px;
+    margin: 0 auto;
+}
+
+footer > a{margin-right: 10px;}
+
+footer ul{
+    margin: 0 auto;
+    width: 130px;
+    height: 30px;
+    margin-top: 20px;
+}
+footer ul li{
+    float: left;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.footerWrap footer p{
+    padding-top: 10px;
+    font-size: 11px;
+    text-align: center;
+}
